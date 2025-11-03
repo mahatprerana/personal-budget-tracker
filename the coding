@@ -1,0 +1,31 @@
+income = 0
+expense = 0
+
+while True:
+    print("1) Add income")
+    print("2) Add expense")
+    print("3) view balance")
+    print("4) exit")
+    choice =input("choose and option 1-4:")
+
+    if choice == "1":
+        dollar = float(input("Enter dollar amount"))
+        income += dollar
+        print("Income added.")
+
+    elif choice == "2":
+        dollar = float(input("Enter dollar amount"))
+        expense += dollar
+        print("Expense added.")
+
+    elif choice == "3":
+        balance = income - expense
+        print(f"Your income was ${income} and your expense was ${expense}.The balance is ${balance}.")
+
+    elif choice == "4":
+        print("see you next time!")
+        break
+
+    else:
+        print("invalid choice")
+
